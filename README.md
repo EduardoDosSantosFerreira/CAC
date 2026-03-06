@@ -1,9 +1,5 @@
-# README.md
-
-```markdown
+````markdown
 # CAC - Crow Auto Clicker 🐦
-
-![CAC Logo](cac.png)
 
 Um auto clicker automático e elegante com interface moderna e tema escuro. Perfeito para automação de cliques em jogos, testes ou qualquer tarefa repetitiva.
 
@@ -17,19 +13,15 @@ Um auto clicker automático e elegante com interface moderna e tema escuro. Perf
 - 🛑 **Parada de emergência** - Tecla ESC para parar imediatamente
 - 🖱️ **Monitor de posição** - Veja a posição atual do mouse em tempo real
 
-## 📸 Screenshots
-
-*[Adicione screenshots da sua aplicação aqui]*
-
 ## 🎮 Como Usar
 
 ### Atalhos de Teclado
 
-| Tecla | Função | Descrição |
-|-------|--------|-----------|
-| `F3` | Capturar | Captura a posição atual do mouse |
-| `F2` | Iniciar/Parar | Inicia ou para os cliques automáticos |
-| `ESC` | Emergência | Para imediatamente todos os cliques |
+| Tecla | Função        | Descrição                             |
+| ----- | ------------- | ------------------------------------- |
+| `F3`  | Capturar      | Captura a posição atual do mouse      |
+| `F2`  | Iniciar/Parar | Inicia ou para os cliques automáticos |
+| `ESC` | Emergência    | Para imediatamente todos os cliques   |
 
 ### Interface
 
@@ -50,23 +42,28 @@ Um auto clicker automático e elegante com interface moderna e tema escuro. Perf
 ### Opção 2: Código Fonte
 
 #### Pré-requisitos
+
 - Python 3.8 ou superior
 - pip (gerenciador de pacotes Python)
 
 #### Passos
 
 1. Clone o repositório:
+
 ```bash
 git clone https://github.com/seu-usuario/cac.git
 cd cac
 ```
+````
 
 2. Instale as dependências:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 3. Execute o programa:
+
 ```bash
 python main.py
 ```
@@ -85,16 +82,19 @@ winsound (biblioteca padrão)
 Para gerar seu próprio executável com ícone:
 
 1. Instale as ferramentas necessárias:
+
 ```bash
 pip install pyinstaller pillow
 ```
 
 2. Execute o script de build:
+
 ```bash
 python build_exe.py
 ```
 
 Ou use o comando direto:
+
 ```bash
 pyinstaller --name="CAC" --windowed --icon=cac.ico --add-data="cac.png;." --noconsole --onefile main.py
 ```
@@ -132,10 +132,13 @@ CAC/
 ## 🛠️ Personalização
 
 ### Cores e Estilo
+
 O tema escuro pode ser personalizado no método `aplicar_estilo_escuro()` em `main.py`
 
 ### Intervalo de Cliques
+
 O intervalo padrão pode ser alterado em:
+
 ```python
 self.intervalo_spin.setValue(1.8)  # Altere para o valor desejado
 ```
@@ -181,7 +184,8 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ---
 
 **Desenvolvido com ❤️ para facilitar sua vida**
-```
+
+````
 
 ## Arquivo requirements.txt
 
@@ -192,7 +196,7 @@ PySide6>=6.5.0
 keyboard>=0.13.5
 pyautogui>=0.9.54
 pillow>=9.0.0
-```
+````
 
 ## Arquivo .gitignore
 
@@ -226,6 +230,7 @@ build/
 ```
 
 Este README.md fornece:
+
 - Visão geral do projeto
 - Instruções de instalação
 - Como usar
